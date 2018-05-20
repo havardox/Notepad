@@ -36,7 +36,7 @@ public class NoteAdapter extends ArrayAdapter<Note> {
             int toWrap = WRAP_CONTENT_LENGTH;
             int lineBreakIndex = note.getContent().indexOf('\n');
             if(note.getContent().length() > WRAP_CONTENT_LENGTH || lineBreakIndex < WRAP_CONTENT_LENGTH) {
-/*                if(lineBreakIndex < WRAP_CONTENT_LENGTH) {
+                if(lineBreakIndex < WRAP_CONTENT_LENGTH) {
                     toWrap = lineBreakIndex;
                 }
                 if(toWrap > 0) {
@@ -45,7 +45,7 @@ public class NoteAdapter extends ArrayAdapter<Note> {
                     content.setText(note.getContent());
                 }
             } else { //if less than 50 chars...leave it as is
-                content.setText(note.getContent());*/
+                content.setText(note.getContent());
             }
         }
         return convertView;
